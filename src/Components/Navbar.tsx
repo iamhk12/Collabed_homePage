@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./logo.jpeg";
+import logo from "./collabed_logo.png";
 
 const Navbar: React.FC = () => {
   const body = document.body;
@@ -49,15 +49,15 @@ const Navbar: React.FC = () => {
       <div className="wrapper">
         <div className="navbar sticky">
           <nav>
-            <div className="navleft">
               <a href="#" className="logo">
                 <img
-                  style={{ height: 40, width: 40 }}
+                  style={{ height: 50, width: 130, filter : "grayscale(200%) brightness(0)" }}
                   className="logo"
                   src={logo}
                   alt=""
                 />
               </a>
+            <div className="navleft">
               <a href="home">Home</a>
               <div className="dropdown" data-dropdown>
                 <a href="javascript:void(0);" className="link" data-dropdown-a>
@@ -72,12 +72,14 @@ const Navbar: React.FC = () => {
               <a href="Contactus">Contact us</a>
             </div>
             <div className="navright">
-            <a href="#" onClick={(e) => {
+            <a href="#" 
+              style={{padding : "5px 20px", background : "white", borderRadius : "20px"}}
+              onClick={(e) => {
               e.preventDefault();
               window.location.href = "https://app-collabed.vercel.app/"; // Change the URL to Google.com
             }}>Sign in</a>
 
-              <a href="Get stated">DarkMode</a>
+              {/* <a href="Get stated">DarkMode</a> */}
             </div>
           </nav>
         </div>
