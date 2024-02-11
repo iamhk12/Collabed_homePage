@@ -74,7 +74,7 @@ const Navbar: React.FC = () => {
             <div className="navright">
             <a href="#" onClick={(e) => {
               e.preventDefault();
-              window.location.href = "https://collab-ed-frontend.vercel.app/"; // Change the URL to Google.com
+              window.location.href = "https://app-collabed.vercel.app/"; // Change the URL to Google.com
             }}>Sign in</a>
 
               <a href="Get stated">DarkMode</a>
